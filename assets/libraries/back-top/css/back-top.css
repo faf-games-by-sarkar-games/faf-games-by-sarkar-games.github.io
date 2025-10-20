@@ -1,0 +1,48 @@
+#back_top {
+    position: fixed;
+    cursor: pointer;
+    bottom: 35px;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, var(--secondary-color) 0, #ffe7ae .01%, #f1b118 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--common-box-shadow);
+    transition: .3s
+}
+
+#back_top .icon {
+    width: 25px;
+    height: 25px;
+    transition: .5s
+}
+
+#back_top .icon path {
+    fill: #111
+}
+
+#back_top:hover {
+    box-shadow: 0 0 10px #ffffffb0
+}
+
+#back_top:hover .icon {
+    transform: translate(0, -1px)
+}
+
+@media (max-width:575px) {
+    #back_top {
+        bottom: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px
+    }
+    #back_top .icon {
+        width: 20px;
+        height: 20px
+    }
+}

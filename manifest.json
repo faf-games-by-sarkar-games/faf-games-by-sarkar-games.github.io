@@ -1,0 +1,67 @@
+{
+    "name": "Littlegames",
+    "short_name": "Littlegames",
+    "start_url": "/",
+    "background_color": "#191c21",
+    "description": "Play free online games",
+    "display": "fullscreen",
+    "theme_color": "#191c21",
+    "icons": [
+        {
+            "src": "ltg-pwa-icon/icon-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "ltg-pwa-icon/icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "ltg-pwa-icon/icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "ltg-pwa-icon/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "ltg-pwa-icon/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "ltg-pwa-icon/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "ltg-pwa-icon/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "ltg-pwa-icon/icon-833x833.png",
+            "sizes": "833x833",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+          "src": "ltg-pwa-icon/screenshot-1280x720.png",
+          "sizes": "1280x720",
+          "type": "image/png",
+          "purpose": "any", 
+          "form_factor": "wide"
+        },
+        {
+          "src": "ltg-pwa-icon/screenshot-1280x720.jpg",
+          "sizes": "1280x720",
+          "type": "image/pjg",
+          "purpose": "any", 
+          "form_factor": "narrow"
+        }
+    ]
+}

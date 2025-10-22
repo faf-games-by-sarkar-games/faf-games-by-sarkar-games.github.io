@@ -1549,7 +1549,7 @@
             });
         });
     </script>
-    <script src="https://littlegames.io/sw.js"></script>
+    <script src="/sw.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             $('.lazy').Lazy({
@@ -1566,13 +1566,13 @@
             });
         });
     </script>
-    <script src="https://littlegames.io/sw.js"></script>
+    <script src="/sw.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             if ("serviceWorker" in navigator) {
                 // Register a service worker hosted at the root of the
                 // site using the default scope.
-                navigator.serviceWorker.register("https://littlegames.io/sw.js").then(
+                navigator.serviceWorker.register("/sw.js").then(
                     (registration) => {
                         //  console.log("Service worker registration succeeded:", registration);
                     },

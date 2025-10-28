@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var img = '<img src="' + g.img + '" alt="' + g.title + '" width="48" height="48" onerror="this.src=\'/img/faf-logo.png\'">';
                 html += '<div class="search-item d-flex align-items-center justify-content-between" style="padding:8px;border-bottom:1px solid rgba(255, 255, 255, 0.29);">';
                 html += '<div class="d-flex align-items-center">' + img + '<div style="margin-left:10px"><a href="' + g.url + '" class="ltg-a-link" style="color:inherit;font-weight:600">' + g.title + '</a></div></div>';
-                html += '<div><a class="btn btn-sm btn-warning" href="' + g.url + '">PLAY</a></div>';
+                html += '<div><a class="vip-back-btn"  href="' + g.url + '">PLAY</a></div>';
                 html += '</div>';
             });
             html += '</div>';

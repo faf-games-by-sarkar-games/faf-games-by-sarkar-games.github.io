@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Search results</title>
+  <link rel="stylesheet" href="/assets/libraries/bootstrap-4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .search-item { padding:12px;border-bottom:1px solid #eee }
+    .search-item img { width:64px;height:48px;object-fit:cover }
+    body { background-color:  #ffffff;}
+
+    /* VIP back button styles */
+    .vip-back-btn{
+      background: linear-gradient(90deg,#ffd54a 0%,#ffb300 60%);
+      color: #2b2b2b;
+      font-weight:700;
+      border-radius: 999px;
+      box-shadow: 0 6px 18px rgba(255,165,0,0.25);
+      padding:6px 10px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .14s ease, box-shadow .14s ease;
+    }
+    .vip-back-btn:hover{ transform: translateY(-2px); box-shadow: 0 12px 30px rgba(255,165,0,0.35); text-decoration:none; cursor: pointer;}
+    .vip-back-btn .vip-crown svg{ width:14px; height:14px; display:block; }
+    .vip-back-btn .vip-badge{ background: rgba(255,255,255,0.95); color:#8a5a00; font-size:11px; padding:2px 6px; border-radius:8px; font-weight:800; }
+  </style>
+</head>
+<body>
+   
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <h3 id="results-title" class="m-0">Search results</h3>
+          <div>
+            <a id="back-origin-btn" class="vip-back-btn" style="display:none;" role="button" aria-label="Go back">
+              <span class="vip-text">Back</span>
+            </a>
+          </div>
+        </div>
+        <p id="results-count" class="text-muted"></p>
+        <div id="results-list"></div>
+      </div>
+    </div>
+  </div>
+<footer class=footer style="color: #eee;">
+            <div class=container>
+                <div class=logo-sc>
+                    <img fetchpriority=low src="https://faf-games.io/img/faf-logo.png" alt="FAF Games logo " width=100%
+                        height=100%>
+                </div>
+                <ul class=ft-menu-sc>
+                    <li><a href="https://faf-games.io/">Home</a></li>
+                    <li><a href="https://faf-games.io/faq/">Faqs </a></li>
+                    <li><a href="https://faf-games.io/privacy/">Privacy Policy</a></li>
+                    <li><a href="https://faf-games.io/about/">About Us</a></li>
+                    <li><a href="https://faf-games.io/dmca/">DMCA</a></li>
+                    <li><a href="https://faf-games.io/contact/">Contact Us</a></li>
+                </ul>
+                <ul class=ft-social-sc>
+                    <li><a href="#" aria-label="visit twitter page of littlegame.io" target=_blank><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="visit facebook page of littlegame.io" target=_blank><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="visit youtube page of littlegame.io" target=_blank><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" aria-label="visit reddit page of littlegame.io" target=_blank><i
+                                class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="#" aria-label="visit instagram page of littlegame.io" target=_blank><i
+                                class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="#" aria-label="visit pinterest page of littlegame.io" target=_blank><i
+                                class="fab fa-pinterest-p"></i></a></li>
+                </ul>
+                <p class=copyright-text> © FAF Games 2025. All Rights Reserved. </p>
+            </div>
+        </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/js/search-page.js"></script>
+</body>
+</html>

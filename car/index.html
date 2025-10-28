@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" />
+
+  <title>Car Games Online — Race, Drift &amp; Drive Free | FAF Games</title>
+<meta name="description" content="Play the best free car games online at FAF Games! 🏎 Race, drift, and drive in 3D car, parking &amp; racing games, full screen, no ads and playable anywhere">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://faf-games.io/car/">
+<meta property="og:title" content="Car Games — Drive, Drift & Race Online Free | FAF Games">
+<meta property="og:description" content="Play free car games online at FAF Games! 🚗 Race, drift & park in 3D racing, driving & simulator games — unblocked, full screen & no ads.">
+<meta property="og:image" content="https://faf-games.io/img/poly-track.webp">
+<meta property="og:image:alt" content="Poly Track — a 3D racing car game with smooth physics and full-screen gameplay">
+<meta property="og:site_name" content="FAF Games">
+<meta property="og:locale" content="en_US">
+<meta property="og:updated_time" content="2025-10-27T00:00:00+00:00">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Car Games — Drive, Drift & Race Online Free | FAF Games">
+<meta name="twitter:description" content="Play free car games online at FAF Games! 🚗 Race, drift & park in 3D racing, driving & simulator games — unblocked, full screen & no ads.">
+<meta name="twitter:image" content="https://faf-games.io/img/poly-track.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://faf-games.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Car Games",
+      "item": "https://faf-games.io/car/"
+    }
+  ]
+}
+</script>
+<!-- WebApplication JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Poly Track",
+  "url": "https://faf-games.io/game/poly-track/",
+  "image": "https://faf-games.io/img/poly-track.webp",
+  "description": "Poly Track is a 3D car racing game where you speed through polygon tracks, drift around corners, and master every turn to finish first.",
+  "applicationCategory": "Game",
+  "applicationSubCategory": "car",
+  "operatingSystem": "Windows, Chrome OS, Linux, MacOS, Android, iOS",
+  "author": { "@type": "Organization", "name": "FAF Games" },
+  "publisher": { "@type": "Organization", "name": "Sarkar Games" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "bestRating": "5", "worstRating": "1", "ratingCount": "72299" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+    <link rel="canonical" href="https://faf-games.io/car/" />
+
+    <link rel="preload stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+        crossorigin="anonymous" as="style">
+    <link rel="preload stylesheet" href="/assets/libraries/bootstrap-4.0.0/css/bootstrap.min.css" as="style" />
+    <link rel="stylesheet" href="/assets/libraries/aos/aos.css" />
+    <link rel="stylesheet" href="/assets/libraries/back-top/css/back-top.css" />
+    <link rel="preload stylesheet" href="/assets/libraries/reset-css/reset.css?v=1759392312" as="style" />
+    <link rel="preload stylesheet" href="/assets/css/main.css?v=1759392312" as="style" />
+    <link rel="preload stylesheet" as="style" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="preload stylesheet" href="/assets/css/game-detail.css?v=1759392312" as="style">
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .ad-box-cnt-play {
+            background: linear-gradient(110deg, #1e283f, rgb(20 27 46) 100%)
+        }
+
+        .w-100pr {
+            width: 100%
+        }
+
+        #social-links ul {
+            padding-left: 0
+        }
+
+        #social-links ul li {
+            display: inline-block
+        }
+
+        #social-links ul li a {
+            padding: 6px;
+            border-radius: 5px;
+            margin: 1px;
+            font-size: 25px
+        }
+
+        #social-links .fa-facebook {
+            color: #0d6efd
+        }
+
+        #social-links .fa-twitter {
+            color: #00bfff
+        }
+
+        #social-links .fa-linkedin {
+            color: #0e76a8
+        }
+
+        #social-links .fa-whatsapp {
+            color: #25d366
+        }
+
+        #social-links .fa-reddit {
+            color: #ff4500
+        }
+
+        #social-links .fa-telegram {
+            color: #08c
+        }
+
+        .play-main-section .play-cnt-sc .icn-sc .icn-link li {
+            padding-left: 18px
+        }
+
+        .br-0-img-src img {
+            border-radius: 0 !important
+        }
+
+        .sticky-class {
+            position: fixed;
+            top: 0;
+            z-index: 1000
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <input type="hidden" id="base_url" value="https://littlegames.io">
+    <div id="back_top" title="Scroll To Top" style="display: none;">
+        <!-- Scroll To Top S -->
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+                d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+        </svg>
+    </div>
+    <div id="wrapper">
+        <header>
+            <div class="header-main">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                        <div class="left-icn-sc hidden-xl hidden-lg">
+                            <button class="navbar-toggler" type="button" aria-label="sidebar button"><span
+                                    class="navbar-toggler-icon"></span></button>
+                        </div>
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="https://faf-games.io">
+                            <img fetchpriority="low" src="https://faf-games.io/img/faf-logo.png" alt="FAF Games logo "
+                                width="100%" height="100%">
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="">
+                            <div class="navbar-inner">
+                                <div class="close-sc hidden-lg hidden-xl">
+                                    <span class="close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path
+                                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div class="logo-sc">
+                                        <a href="https://faf-games.io">
+                                            <img fetchpriority="low" src="https://faf-games.io/img/faf-logo.png"
+                                                alt="FAF Games logo " width="100%" height="100%">
+                                        </a>
+                                    </div>
+                                </div>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item hidden-lg hidden-xl">
+                                        <ul class="ft-social-sc">
+                                            <li><a href="#" target="_blank"
+                                                    aria-label="twitter page of littlegame.io"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#" aria-label="facebook page of littlegame.io"
+                                                    target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#" aria-label="youtube page of littlegame.io"
+                                                    target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                            <li><a href="#" aria-label="raddit page of littlegame.io" target="_blank"><i
+                                                        class="fab fa-reddit-alien"></i></a></li>
+                                            <li><a href="#" aria-label="instagram page of littlegame.io"
+                                                    target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                                            <li><a href="#" aria-label="pinterest page of littlegame.io"
+                                                    target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://faf-games.io/action/">
+                                            <i class="fas fa-yin-yang icn-left"></i>Action
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://faf-games.io/adventure/">
+                                            <i class="fas fa-umbrella-beach icn-left"></i>Adventure
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://faf-games.io/bike/">
+                                            <i class="fas fa-motorcycle icn-left"></i>Bike
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://faf-games.io/car/">
+                                            <i class="fas fa-car-crash icn-left"></i>Car
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://faf-games.io/classroom6x/">
+                                            <i class="fas fa-chalkboard-teacher icn-left"></i>Classroom 6x
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://faf-games.io/idle/">
+                                            <i class="fas fa-hourglass-half icn-left"></i>Idle
+                                        </a>
+                                    </li>
+                                    <li class="nav-item has-dropdown">
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            More <i class="fa fa-chevron-down icn-right"></i>
+                                        </a>
+                                        <div class="dropdown-div">
+                                            <ul class="dropdown-ul">
+                                                <li>
+                                                    <a href="https://faf-games.io/io-games/">
+                                                        <i class="fas fa-globe"></i> IO Games
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://faf-games.io/shooting/">
+                                                        <i class="fas fa-crosshairs"></i> Shooting
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://faf-games.io/skill/">
+                                                        <i class="fas fa-brain"></i> Skill
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://faf-games.io/sport/">
+                                                        <i class="fas fa-football-ball"></i> Sport
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://faf-games.io/2-players-games/">
+                                                        <i class="fas fa-user-friends"></i> 2 Players
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item hidden-lg hidden-xl btn-sc-item"> <a href="javascript:void(0)"
+                                            class="w-100 btn btn-secondary" id="app-installer-mobile"><i
+                                                class="fas fa-download"></i> Download littlegames app </a> <a
+                                            href="https://littlegames.io/game/planet-clicker"
+                                            class="w-100 mt-2 btn btn-secondary"> <i class="fa fa-play-circle"></i> Play
+                                            now </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="right-icn-sc">
+                            <ul class="icn-ul">
+
+                                <li>
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#searchModal"
+                                        aria-label="search-modal-icon">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </li>
+
+                                <li class="btn-sc hidden-md hidden-sm hidden-xs">
+                                    <a href="https://littlegames.io/game/shady-bears"
+                                        class="btn btn-secondary btn-play-now small-btn">
+                                        <i class="fa fa-play-circle"></i> Play now
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+        <section class="section ">
+
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <h2><strong>🎯 Car Games</strong></h2>
+                    <p><span style="font-weight: 400;">Welcome to </span><strong>FAF Games&rsquo; Car
+                            Games</strong><span style="font-weight: 400;"> collection &mdash; the home of high-speed
+                            fun, sharp turns, and non-stop racing action. Here, you can play hundreds of
+                        </span><strong>free online car games</strong><span style="font-weight: 400;"> directly in your
+                            browser &mdash; </span><strong>no downloads, no sign-ups, and no restrictions</strong><span
+                            style="font-weight: 400;">. Whether you love racing, drifting, or precision parking,
+                            we&rsquo;ve got something that matches your driving style.</span></p>
+
+
+                </div>
+
+                <div class="grd-main-box">
+                    <div class="grd-title-box no-right-box">
+                        <div class="left-box">
+                            <h2 class="title"> Trending - Car Game's </h2>
+                        </div>
+                    </div>
+
+                    <div class="grd-content-box">
+
+                        <div
+                            class="grd-row grid-template-columns-xl-4 grid-template-columns-lg-4 grid-template-columns-md-4 grid-template-columns-sm-3 grid-template-columns-xs-2 ">
+
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/escape-road-city-2/" class="card"
+                                    title="Escape Road City 2">
+                                    <div class="card-img-wrapper aspect-ratio-2-1 tag tag-sm  tag-new  "
+                                        data-game-slug="narrow-one">
+                                        <div class="img-sc">
+                                            <img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/escape-road-city-2.webp"
+                                                alt="Escape Road City 2">
+                                        </div>
+                                    </div>
+                                    <span class="title">Escape Road City 2</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/stunt-car-challenge-3/" class="card"
+                                    title="Stunt Car Challenge 3">
+                                    <div class="card-img-wrapper aspect-ratio-2-1 tag tag-sm  tag-new  "
+                                        data-game-slug="Stunt Car Challenge 3">
+                                        <div class="img-sc">
+                                            <img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/stunt-car-challenge-3.webp"
+                                                alt="Stunt Car Challenge 3">
+                                        </div>
+                                    </div>
+                                    <span class="title">Stunt Car Challenge 3</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/parking-fury-3d/" class="card"
+                                    title="Parking Fury 3d">
+                                    <div class="card-img-wrapper aspect-ratio-2-1 tag tag-sm  tag-popular  "
+                                        data-game-slug="Parking Fury 3d">
+                                        <div class="img-sc">
+                                            <img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/parking-fury-3d.webp"
+                                                alt="Parking Fury 3d">
+                                        </div>
+                                    </div>
+                                    <span class="title">Parking Fury 3d</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/madalin-stunt-cars-3/" class="card"
+                                    title="Madalin Stunt Cars 3">
+                                    <div class="card-img-wrapper aspect-ratio-2-1 tag tag-sm  tag-popular  "
+                                        data-game-slug="om-nom-run">
+                                        <div class="img-sc">
+                                            <img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/madalin-stunt-cars-3.webp"
+                                                alt="Madalin Stunt Cars 3">
+                                        </div>
+                                    </div>
+                                    <span class="title">Madalin Stunt Cars 3</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        <section class="section no-top-padding">
+
+            <div class="ad-section">
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="grd-main-box">
+
+                    <div class="grd-title-box no-right-box">
+
+                        <div class="left-box">
+
+                            <h1 class="title"> Car </h1>
+
+                        </div>
+
+                    </div>
+
+                    <div class="grd-content-box">
+
+                        <div
+                            class="grd-row grid-template-columns-xl-8 grid-template-columns-lg-6 grid-template-columns-md-4 grid-template-columns-sm-4 grid-template-columns-xs-2">
+
+
+
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/burnin-rubber-5-xs/" class="card"
+                                    title="Burnin Rubber 5 XS">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="burnin-rubber-5-xs">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/burnin-rubber-5-xs.webp"
+                                                alt="Game 31 is Burnin Rubber 5 XS"></div>
+                                    </div>
+                                    <span class="title">Burnin Rubber 5 XS</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/burnin-rubber/" class="card" title="Burnin Rubber">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="burnin-rubber">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/burnin-rubber.webp"
+                                                alt="Game 32 is Burnin Rubber"></div>
+                                    </div>
+                                    <span class="title">Burnin Rubber</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/burnout-drift-hilltop/" class="card"
+                                    title="Burnout Drift Hilltop">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="burnout-drift-hilltop">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/burnout-drift-hilltop.webp"
+                                                alt="Game 33 is Burnout Drift Hilltop"></div>
+                                    </div>
+                                    <span class="title">Burnout Drift Hilltop</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/bus-parking-3d/" class="card" title="Bus Parking 3D">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="bus-parking-3d">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/bus-parking-3d.webp"
+                                                alt="Game 35 is Bus Parking 3D"></div>
+                                    </div>
+                                    <span class="title">Bus Parking 3D</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/car-drift-racers-2/" class="card"
+                                    title="Car Drift Racers 2">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="car-drift-racers-2">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/car-drift-racers-2.webp"
+                                                alt="Game 37 is Car Drift Racers 2"></div>
+                                    </div>
+                                    <span class="title">Car Drift Racers 2</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/car-rush/" class="card" title="Car Rush">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="car-rush">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/car-rush.webp"
+                                                alt="Game 38 is Car Rush"></div>
+                                    </div>
+                                    <span class="title">Car Rush</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/car-simulator-arena/" class="card"
+                                    title="Car Simulator Arena">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="car-simulator-arena">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/car-simulator-arena.webp"
+                                                alt="Game 39 is Car Simulator Arena"></div>
+                                    </div>
+                                    <span class="title">Car Simulator Arena</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/cars-thief/" class="card" title="Cars Thief">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="cars-thief">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/cars-thief.webp"
+                                                alt="Game 40 is Cars Thief"></div>
+                                    </div>
+                                    <span class="title">Cars Thief</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/cartoon-mini-racing/" class="card"
+                                    title="Cartoon Mini Racing">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="cartoon-mini-racing">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/cartoon-mini-racing.webp"
+                                                alt="Game 41 is Cartoon Mini Racing"></div>
+                                    </div>
+                                    <span class="title">Cartoon Mini Racing</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/city-car-driving-stunt-master/" class="card"
+                                    title="City Car Driving Stunt Master">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="city-car-driving-stunt-master">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/city-car-driving-stunt-master.webp"
+                                                alt="Game 44 is City Car Driving Stunt Master"></div>
+                                    </div>
+                                    <span class="title">City Car Driving Stunt Master</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/city-rider/" class="card" title="City Rider">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="city-rider">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/city-rider.webp"
+                                                alt="Game 45 is City Rider"></div>
+                                    </div>
+                                    <span class="title">City Rider</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/demolition-derby-crash-racing/" class="card"
+                                    title="Demolition Derby Crash Racing">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="demolition-derby-crash-racing">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/demolition-derby-crash-racing.webp"
+                                                alt="Game 56 is Demolition Derby Crash Racing"></div>
+                                    </div>
+                                    <span class="title">Demolition Derby Crash Racing</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/drift-boss/" class="card" title="Drift Boss">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="drift-boss">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/drift-boss.webp"
+                                                alt="Game 59 is Drift Boss"></div>
+                                    </div>
+                                    <span class="title">Drift Boss</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/drift-hunters/" class="card" title="Drift Hunters">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="drift-hunters">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/drift-hunters.webp"
+                                                alt="Game 60 is Drift Hunters"></div>
+                                    </div>
+                                    <span class="title">Drift Hunters</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/eggy-car/" class="card" title="Eggy Car">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="eggy-car">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/eggy-car.webp"
+                                                alt="Game 65 is Eggy Car"></div>
+                                    </div>
+                                    <span class="title">Eggy Car</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/endless-truck/" class="card" title="Endless Truck">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="endless-truck">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/endless-truck.webp"
+                                                alt="Game 67 is Endless Truck"></div>
+                                    </div>
+                                    <span class="title">Endless Truck</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/extreme-car-parking/" class="card"
+                                    title="Extreme Car Parking">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="extreme-car-parking">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/extreme-car-parking.webp"
+                                                alt="Game 71 is Extreme Car Parking"></div>
+                                    </div>
+                                    <span class="title">Extreme Car Parking</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/fire-truck-rescue/" class="card"
+                                    title="Fire Truck Rescue">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="fire-truck-rescue">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/fire-truck-rescue.webp"
+                                                alt="Game 73 is Fire Truck Rescue"></div>
+                                    </div>
+                                    <span class="title">Fire Truck Rescue</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/fire-truck/" class="card" title="Fire Truck">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="fire-truck">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/fire-truck.webp"
+                                                alt="Game 74 is Fire Truck"></div>
+                                    </div>
+                                    <span class="title">Fire Truck</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/flying-car-simulator/" class="card"
+                                    title="Flying Car Simulator">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="flying-car-simulator">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/flying-car-simulator.webp"
+                                                alt="Game 82 is Flying Car Simulator"></div>
+                                    </div>
+                                    <span class="title">Flying Car Simulator</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/fortride-open-world/" class="card"
+                                    title="Fortride Open World">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="fortride-open-world">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/fortride-open-world.webp"
+                                                alt="Game 86 is Fortride Open World"></div>
+                                    </div>
+                                    <span class="title">Fortride Open World</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/go-kart-go-ultra/" class="card"
+                                    title="Go Kart Go Ultra">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="go-kart-go-ultra">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/go-kart-go-ultra.webp"
+                                                alt="Game 91 is Go Kart Go Ultra"></div>
+                                    </div>
+                                    <span class="title">Go Kart Go Ultra</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/highway-racer-3d/" class="card"
+                                    title="Highway Racer 3D">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="highway-racer-3d">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/highway-racer-3d.webp"
+                                                alt="Game 97 is Highway Racer 3D"></div>
+                                    </div>
+                                    <span class="title">Highway Racer 3D</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/impossible-monster-truck/" class="card"
+                                    title="Impossible Monster Truck">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="impossible-monster-truck">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/impossible-monster-truck.webp"
+                                                alt="Game 105 is Impossible Monster Truck"></div>
+                                    </div>
+                                    <span class="title">Impossible Monster Truck</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/indian-truck-simulator-3d/" class="card"
+                                    title="Indian Truck Simulator 3D">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="indian-truck-simulator-3d">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/indian-truck-simulator-3d.webp"
+                                                alt="Game 106 is Indian Truck Simulator 3D"></div>
+                                    </div>
+                                    <span class="title">Indian Truck Simulator 3D</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/jelly-truck/" class="card" title="Jelly Truck">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="jelly-truck">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/jelly-truck.webp"
+                                                alt="Game 110 is Jelly Truck"></div>
+                                    </div>
+                                    <span class="title">Jelly Truck</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/mad-truck-challenge-special/" class="card"
+                                    title="Mad Truck Challenge Special">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="mad-truck-challenge-special">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/mad-truck-challenge-special.webp"
+                                                alt="Game 115 is Mad Truck Challenge Special"></div>
+                                    </div>
+                                    <span class="title">Mad Truck Challenge Special</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/madalin-stunt-cars-2/" class="card"
+                                    title="Madalin Stunt Cars 2">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="madalin-stunt-cars-2">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/madalin-stunt-cars-2.webp"
+                                                alt="Game 116 is Madalin Stunt Cars 2"></div>
+                                    </div>
+                                    <span class="title">Madalin Stunt Cars 2</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/madalin-stunt-cars-3/" class="card"
+                                    title="Madalin Stunt Cars 3">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="madalin-stunt-cars-3">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/madalin-stunt-cars-3.webp"
+                                                alt="Game 117 is Madalin Stunt Cars 3"></div>
+                                    </div>
+                                    <span class="title">Madalin Stunt Cars 3</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/merge-cyber-racers/" class="card"
+                                    title="Merge Cyber Racers">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="merge-cyber-racers">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/merge-cyber-racers.webp"
+                                                alt="Game 121 is Merge Cyber Racers"></div>
+                                    </div>
+                                    <span class="title">Merge Cyber Racers</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/merge-round-racers/" class="card"
+                                    title="Merge Round Racers">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="merge-round-racers">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/merge-round-racers.webp"
+                                                alt="Game 122 is Merge Round Racers"></div>
+                                    </div>
+                                    <span class="title">Merge Round Racers</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/monster-truck-destroyer/" class="card"
+                                    title="Monster Truck Destroyer">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="monster-truck-destroyer">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/monster-truck-destroyer.webp"
+                                                alt="Game 124 is Monster Truck Destroyer"></div>
+                                    </div>
+                                    <span class="title">Monster Truck Destroyer</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/monster-truck-vs-zombie/" class="card"
+                                    title="Monster Truck Vs Zombie">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="monster-truck-vs-zombie">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/monster-truck-vs-zombie.webp"
+                                                alt="Game 125 is Monster Truck Vs Zombie"></div>
+                                    </div>
+                                    <span class="title">Monster Truck Vs Zombie</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/neon-racer/" class="card" title="Neon Racer">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="neon-racer">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/neon-racer.webp"
+                                                alt="Game 134 is Neon Racer"></div>
+                                    </div>
+                                    <span class="title">Neon Racer</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/parking-fury-2/" class="card" title="Parking Fury 2">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="parking-fury-2">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/parking-fury-2.webp"
+                                                alt="Game 137 is Parking Fury 2"></div>
+                                    </div>
+                                    <span class="title">Parking Fury 2</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/parking-fury-3/" class="card" title="Parking Fury 3">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="parking-fury-3">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/parking-fury-3.webp"
+                                                alt="Game 138 is Parking Fury 3"></div>
+                                    </div>
+                                    <span class="title">Parking Fury 3</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/parking-fury-3d-beach-city/" class="card"
+                                    title="Parking Fury 3D Beach City">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="parking-fury-3d-beach-city">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/parking-fury-3d-beach-city.webp"
+                                                alt="Game 139 is Parking Fury 3D Beach City"></div>
+                                    </div>
+                                    <span class="title">Parking Fury 3D Beach City</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/parking-fury-3d/" class="card"
+                                    title="Parking Fury 3D">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="parking-fury-3d">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/parking-fury-3d.webp"
+                                                alt="Game 140 is Parking Fury 3D"></div>
+                                    </div>
+                                    <span class="title">Parking Fury 3D</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/parking-fury/" class="card" title="Parking Fury">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="parking-fury">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/parking-fury.webp"
+                                                alt="Game 141 is Parking Fury"></div>
+                                    </div>
+                                    <span class="title">Parking Fury</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/poly-track/" class="card" title="Poly Track">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="poly-track">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/poly-track.webp"
+                                                alt="Game 143 is Poly Track"></div>
+                                    </div>
+                                    <span class="title">Poly Track</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/racing-monster-trucks/" class="card"
+                                    title="Racing Monster Trucks">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="racing-monster-trucks">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/racing-monster-trucks.webp"
+                                                alt="Game 144 is Racing Monster Trucks"></div>
+                                    </div>
+                                    <span class="title">Racing Monster Trucks</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/real-flying-truck/" class="card"
+                                    title="Real Flying Truck">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="real-flying-truck">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/real-flying-truck.webp"
+                                                alt="Game 145 is Real Flying Truck"></div>
+                                    </div>
+                                    <span class="title">Real Flying Truck</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/real-garbage-truck/" class="card"
+                                    title="Real Garbage Truck">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="real-garbage-truck">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/real-garbage-truck.webp"
+                                                alt="Game 146 is Real Garbage Truck"></div>
+                                    </div>
+                                    <span class="title">Real Garbage Truck</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/rocket-soccer-derby/" class="card"
+                                    title="Rocket Soccer Derby">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="rocket-soccer-derby">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/rocket-soccer-derby.webp"
+                                                alt="Game 150 is Rocket Soccer Derby"></div>
+                                    </div>
+                                    <span class="title">Rocket Soccer Derby</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/sling-drift/" class="card" title="Sling Drift">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="sling-drift">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/sling-drift.webp"
+                                                alt="Game 159 is Sling Drift"></div>
+                                    </div>
+                                    <span class="title">Sling Drift</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/slope-racing-3d/" class="card"
+                                    title="Slope Racing 3D">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="slope-racing-3d">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/slope-racing-3d.webp"
+                                                alt="Game 163 is Slope Racing 3D"></div>
+                                    </div>
+                                    <span class="title">Slope Racing 3D</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/soccar/" class="card" title="Soccar">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="soccar">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/soccar.webp"
+                                                alt="Game 178 is Soccar"></div>
+                                    </div>
+                                    <span class="title">Soccar</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/stunt-car-challenge-3/" class="card"
+                                    title="Stunt Car Challenge 3">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="stunt-car-challenge-3">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/stunt-car-challenge-3.webp"
+                                                alt="Game 189 is Stunt Car Challenge 3"></div>
+                                    </div>
+                                    <span class="title">Stunt Car Challenge 3</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/survival-race/" class="card" title="Survival Race">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="survival-race">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/survival-race.webp"
+                                                alt="Game 201 is Survival Race"></div>
+                                    </div>
+                                    <span class="title">Survival Race</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/top-speed-3d/" class="card" title="Top Speed 3D">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="top-speed-3d">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/top-speed-3d.webp"
+                                                alt="Game 210 is Top Speed 3D"></div>
+                                    </div>
+                                    <span class="title">Top Speed 3D</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/traffic-mania/" class="card" title="Traffic Mania">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="traffic-mania">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/traffic-mania.webp"
+                                                alt="Game 212 is Traffic Mania"></div>
+                                    </div>
+                                    <span class="title">Traffic Mania</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/traffic-tom/" class="card" title="Traffic Tom">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="traffic-tom">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/traffic-tom.webp"
+                                                alt="Game 213 is Traffic Tom"></div>
+                                    </div>
+                                    <span class="title">Traffic Tom</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/truck-trials/" class="card" title="Truck Trials">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="truck-trials">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/truck-trials.webp"
+                                                alt="Game 214 is Truck Trials"></div>
+                                    </div>
+                                    <span class="title">Truck Trials</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/ultimate-off-road/" class="card"
+                                    title="Ultimate Off Road">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="ultimate-off-road">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/ultimate-off-road.webp"
+                                                alt="Game 220 is Ultimate Off Road"></div>
+                                    </div>
+                                    <span class="title">Ultimate Off Road</span>
+                                </a>
+                            </div>
+                            <div class="grd-col">
+                                <a href="https://faf-games.io/game/escape-road-city-2/" class="card"
+                                    title="Escape Road City 2">
+                                    <div class="card-img-wrapper aspect-ratio-4-3 tag tag-sm tag-new"
+                                        data-game-slug="escape-road-city-2">
+                                        <div class="img-sc"><img src="" class="lazy"
+                                                data-src="https://faf-games.io/img/escape-road-city-2.webp"
+                                                alt="Game 238 is Escape Road City 2"></div>
+                                    </div>
+                                    <span class="title">Escape Road City 2</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section no-top-padding">
+            <div class="container">
+                <div class="cnt-sc text-left">
+                    <div class="category-details text-justify mt-3">
+
+                        <h2 class="title">🏎 What isCar Games?</h2>
+
+                        <p><strong>Car games</strong> are interactive and engaging video games where players control
+                            different types of vehicles across various environments. They range from realistic driving
+                            simulators to high-speed arcade races, allowing players to experience the thrill of driving
+                            without leaving their homes.</p>
+
+                        <p>On <strong>FAF Games</strong>, you’ll find a wide variety of car games — including:</p>
+                        <ul class="list-disc pl-6 space-y-2 marker:text-white">
+                            <li>🏁 <a href="https://faf-games.io/racing/"><strong>Racing Games</strong></a> — Challenge
+                                AI or other players in fast-paced circuits.</li>
+                            <li>🚘 <a href="https://faf-games.io/driving/"><strong>Driving Games</strong></a> —
+                                Experience realistic traffic and open-world environments.</li>
+                            <li>🛻 <a href="https://faf-games.io/truck/"><strong>Truck Games</strong></a> — Take on
+                                heavy-duty missions and haul big loads.</li>
+                            <li>🅿️ <a href="https://faf-games.io/parking/"><strong>Parking Games</strong></a> — Test
+                                your accuracy and patience in tight spaces.</li>
+                        </ul>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🌟 Featured Car Games</h2>
+                            <p>Ready to race? Check out some of the most popular car games right now:</p>
+                            <ul class="list-disc pl-6 space-y-2 marker:text-white">
+                                <li>🔥 <a href="https://faf-games.io/game/highway-racer-3d/">Highway Racer 3D</a> —
+                                    Speed through traffic and overtake cars for high scores.</li>
+                                <li>🚙 <a href="https://faf-games.io/game/impossible-monster-truck/">Impossible Monster
+                                        Truck</a> — Conquer dangerous tracks and sky ramps.</li>
+                                <li>🛞 <a href="https://faf-games.io/game/car-simulator-arena/">Car Simulator Arena</a>
+                                    — Test drive cars in an open world with realistic physics.</li>
+                                <li>🏎️ <a href="https://faf-games.io/game/extreme-car-drift/">Extreme Car Drift</a> —
+                                    Master the art of drifting on sharp corners.</li>
+                                <li>🧩 <a href="https://faf-games.io/game/poly-track/">Poly Track</a> — Creative 3D
+                                    racing with smooth physics and challenging tracks.</li>
+                                <li>✈️ <a href="https://faf-games.io/game/flying-car-simulator/">Flying Car
+                                        Simulator</a> — Take racing to the skies with futuristic flying cars.</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🏫 Play Car Games Unblocked at School or Work</h2>
+                            <p>Stuck somewhere where gaming sites are blocked? Not here! <strong>FAF Games</strong> is
+                                fully <strong>unblocked</strong>, so you can enjoy your favorite <strong>car
+                                    games</strong> even on restricted networks — whether you’re in
+                                <strong>school</strong>, at <strong>work</strong>, or using a
+                                <strong>Chromebook</strong>. Just open your browser, choose a game, and start driving
+                                freely — no VPN, no limits.</p>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">📱 Fast, Free & Mobile-Friendly</h2>
+                            <p>Every car game on <strong>FAF Games</strong> loads instantly and runs smoothly on
+                                <strong>desktop, mobile, and tablet</strong>. No installations. No waiting. Just
+                                <strong>click, play, and race</strong>. Our platform ensures <strong>fast loading
+                                    speeds</strong>, <strong>responsive controls</strong>, and <strong>safe
+                                    gaming</strong> for players of all ages.</p>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🌟 Popular Car Games</h2>
+                            <p>Looking for the most loved and trending car games on <a
+                                    href="https://faf-games.io"><strong>FAF Games</strong></a>? Here are the community
+                                favorites — each one popular for its <strong>unique gameplay</strong>, <strong>fun
+                                    mechanics</strong>, and <strong>addictive challenges</strong>.</p>
+                            <ul class="list-disc pl-6 space-y-2 marker:text-white">
+                                <li>🚗 <a href="https://faf-games.io/game/eggy-car/"><strong>Eggy Car</strong></a></li>
+                                <li>🛣️ <a href="https://faf-games.io/game/escape-road-city-2/"><strong>Escape Road City
+                                            2</strong></a></li>
+                                <li>🚘 <a href="https://faf-games.io/game/3d-car-simulator/"><strong>3D Car
+                                            Simulator</strong></a></li>
+                                <li>💨 <a href="https://faf-games.io/game/drift-boss/"><strong>Drift Boss</strong></a>
+                                </li>
+                                <li>🏎️ <a href="https://faf-games.io/game/drift-hunters/"><strong>Drift
+                                            Hunters</strong></a></li>
+                                <li>🏁 <a href="https://faf-games.io/game/car-rush/"><strong>Car Rush</strong></a></li>
+                                <li>🧒 <a href="https://faf-games.io/game/cartoon-mini-racing/"><strong>Cartoon Mini
+                                            Racing</strong></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🎯 Why Choose FAF Games for Car Games?</h2>
+                            <ul class="list-disc pl-6 space-y-1 marker:text-white">
+                                <li>✅ 100% <strong>Free and Unblocked</strong></li>
+                                <li>✅ Works on any device — <strong>PC, mobile, or tablet</strong></li>
+                                <li>✅ Constantly updated with <strong>new car titles</strong></li>
+                                <li>✅ Safe and secure — no pop-ups, no distractions</li>
+                                <li>✅ Created for players who love <strong>speed and freedom</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🕹 How to Play Car Games Online</h2>
+                            <ol class="list-decimal pl-8 space-y-2">
+                                <li>Visit <a href="https://faf-games.io/car/"><strong>FAF Games</strong></a> Home page.
+                                </li>
+                                <li>Click on the <a href="https://faf-games.io/car">Car</a> category section.</li>
+                                <li>Choose any game you like — racing, drifting, or parking.</li>
+                                <li>Click <strong>Play Now</strong> and wait a few seconds for it to load.</li>
+                                <li>Use your <strong>arrow keys or WASD</strong> to control your car.</li>
+                                <li>Race, drift, or park to earn high scores and unlock new levels.</li>
+                            </ol>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🏆 Explore More Car & Driving Categories</h2>
+                            <p>Explore more amazing driving experiences from the FAF Games collection. Each category
+                                offers a unique type of challenge — from realistic racing circuits to parking puzzles
+                                and off-road adventures.</p>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🏁 Racing Games</h2>
+                            <p>If you live for <strong>speed and adrenaline</strong>, our <strong>Racing Games</strong>
+                                collection is made for you. Race across highways, cities, and stunt tracks — challenge
+                                AI drivers, set time records, or just drift for fun!</p>
+                            <p><strong>Popular Racing Titles:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 marker:text-white">
+                                <li><a href="https://faf-games.io/game/highway-racer-3d/">Highway Racer 3D</a></li>
+                                <li><a href="https://faf-games.io/game/top-speed-3d/">Top Speed 3D</a></li>
+                                <li><a href="https://faf-games.io/game/burnin-rubber-5-xs/">Burnin Rubber 5 XS</a></li>
+                                <li><a href="https://faf-games.io/game/madalin-stunt-cars-3/">Madalin Stunt Cars 3</a>
+                                </li>
+                                <li><a href="https://faf-games.io/game/go-kart-go-ultra/">Go Kart Go Ultra</a></li>
+                                <li><a href="https://faf-games.io/game/racing-monster-trucks/">Racing Monster Trucks</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🚘 Driving Games</h2>
+                            <p><strong>Driving Games</strong> let you experience the joy of realistic controls and
+                                open-world exploration. You can follow traffic rules, do crazy stunts, or drive freely
+                                through beautiful environments.</p>
+                            <p><strong>Top Driving Games:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 marker:text-white">
+                                <li><a href="https://faf-games.io/game/fortride-open-world/">Fortride Open World</a>
+                                </li>
+                                <li><a href="https://faf-games.io/game/flying-car-simulator/">Flying Car Simulator</a>
+                                </li>
+                                <li><a href="https://faf-games.io/game/city-rider/">City Rider</a></li>
+                                <li><a href="https://faf-games.io/game/real-flying-truck/">Real Flying Truck</a></li>
+                                <li><a href="https://faf-games.io/game/drive-mad/">Drive Mad</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🅿️ Parking Games</h2>
+                            <p>These games test your <strong>accuracy, patience, and steering skills</strong>. Perfect
+                                for casual gamers who enjoy a slow, precise challenge. Park cars, buses, and trucks
+                                without crashing!</p>
+                            <p><strong>Top Parking Games:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 marker:text-white">
+                                <li><a href="https://faf-games.io/game/bus-parking-3d/">Bus Parking 3D</a></li>
+                                <li><a href="https://faf-games.io/game/parking-fury/">Parking Fury</a></li>
+                                <li><a href="https://faf-games.io/game/parking-fury-3/">Parking Fury 3</a></li>
+                                <li><a href="https://faf-games.io/game/parking-fury-3d/">Parking Fury 3D</a></li>
+                                <li><a href="https://faf-games.io/game/extreme-car-parking/">Extreme Car Parking</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🛻 Truck Games</h2>
+                            <p>Big vehicles, big power, and big fun! <strong>Truck Games</strong> combine precision and
+                                adventure, letting you take control of massive machines. From monster trucks to cargo
+                                haulers — every drive is a test of skill.</p>
+                            <p><strong>Popular Truck Titles:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 marker:text-white">
+                                <li><a href="https://faf-games.io/game/impossible-monster-truck/">Impossible Monster
+                                        Truck</a></li>
+                                <li><a href="https://faf-games.io/game/monster-truck-vs-zombie/">Monster Truck vs
+                                        Zombie</a></li>
+                                <li><a href="https://faf-games.io/game/indian-truck-simulator-3d/">Indian Truck
+                                        Simulator 3D</a></li>
+                                <li><a href="https://faf-games.io/game/endless-truck/">Endless Truck</a></li>
+                                <li><a href="https://faf-games.io/game/demolition-derby-crash-racing/">Demolition Derby
+                                        Crash Racing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">🧠 Simulation Games</h2>
+                            <p>For players who prefer <strong>realism and smooth physics</strong>, these games deliver
+                                lifelike driving experiences. Control, handling, and attention to detail make every
+                                moment feel authentic.</p>
+                            <p><strong>Top Simulation Games:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 marker:text-white">
+                                <li><a href="https://faf-games.io/game/poly-track/">Poly Track</a></li>
+                                <li><a href="https://faf-games.io/game/3d-car-simulator/">3D Car Simulator</a></li>
+                                <li><a href="https://faf-games.io/game/car-simulator-arena/">Car Simulator Arena</a>
+                                </li>
+                                <li><a href="https://faf-games.io/game/fortride-open-world/">Fortride Open World</a>
+                                </li>
+                                <li><a href="https://faf-games.io/game/madalin-stunt-cars-2/">Madalin Stunt Cars 2</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="category-details mt-4">
+                            <h2 class="title">💬 About FAF Games</h2>
+                            <p><strong>FAF Games</strong> is your destination for <strong>unblocked browser
+                                    gaming</strong> — designed for speed, safety, and simplicity. Play anywhere, anytime
+                                — because gaming should never have limits.</p>
+                            <p><strong>Created by</strong> <a href="https://faf-games.io/about/"><strong>Sarkar
+                                        Games</strong></a> — built for players who love freedom and fun. 🎯</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section download-app-section">
+            <div class=container-fluid>
+                <div class=text-center>
+                    <a href=javascript:void(0) class="link btn btn-secondary small-btn" data-toggle=modal
+                        data-target=#PWAModal> <i class="fas fa-arrow-alt-circle-down"></i> <b>Download littlegames
+                            app</b> </a>
+                </div>
+            </div>
+        </section>
+        <footer class=footer>
+            <div class=container>
+                <div class=logo-sc>
+                    <img fetchpriority=low src="https://faf-games.io/img/faf-logo.png" alt="FAF Games logo " width=100%
+                        height=100%>
+                </div>
+                <ul class=ft-menu-sc>
+                    <li><a href="https://faf-games.io/">Home</a></li>
+                    <li><a href="https://faf-games.io/faq/">Faqs </a></li>
+                    <li><a href="https://faf-games.io/privacy/">Privacy Policy</a></li>
+                    <li><a href="https://faf-games.io/about/">About Us</a></li>
+                    <li><a href="https://faf-games.io/dmca/">DMCA</a></li>
+                    <li><a href="https://faf-games.io/contact/">Contact Us</a></li>
+                </ul>
+                <ul class=ft-social-sc>
+                    <li><a href="#" aria-label="visit twitter page of littlegame.io" target=_blank><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="visit facebook page of littlegame.io" target=_blank><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="visit youtube page of littlegame.io" target=_blank><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" aria-label="visit reddit page of littlegame.io" target=_blank><i
+                                class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="#" aria-label="visit instagram page of littlegame.io" target=_blank><i
+                                class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="#" aria-label="visit pinterest page of littlegame.io" target=_blank><i
+                                class="fab fa-pinterest-p"></i></a></li>
+                </ul>
+                <p class=copyright-text> © FAF Games 2025. All Rights Reserved. </p>
+            </div>
+        </footer>
+        <div class="modal fade modalSubscribe" id=PWAModal>
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class=modal-content>
+                    <div class=modal-body>
+                        <button type=button class=close data-dismiss=modal>&times;</button>
+                        <h4 class=title>Unlocked Web Application</h4>
+                        <p class=mt-4>
+                            LittleGames utilizes a cool web technology.! Install it and use like a native app.
+                        </p>
+                        <p>
+                            This means you can enjoy our games with the convenience of a native app, without needing a
+                            traditional installation and turn LittleGames to your personal app playground.
+                        </p>
+                        <p></p>
+                        Similar to all other App, LittleGames will have an icon on your homepage after installation.
+                        This makes it accessible to open LittleGames quickly and simply.
+                        <p></p>
+                        <div class=btn-sc>
+                            <a href=javascript:void(0) id=app-installer class="w-100 btn btn-secondary"
+                                data-dismiss=modal> Unlocked Web Application </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modalSubscribe modalNotifications" id=NotificationAllow tabindex=-1 role=dialog
+            aria-labelledby=modalNotificationsLabel aria-hidden=true data-backdrop=false data-keyboard=false
+            style=pointer-events:none>
+            <div class="modal-dialog modal-md mt-0">
+                <div class=modal-content style=pointer-events:auto>
+                    <div class=modal-body>
+                        <h4 class=title>Turn On Game Notifications <i class="fa fa-bell"></i> </h4>
+                        <p class=mt-4>
+                            Never miss out! Get exclusive updates on trending games and exciting new releases! 🚀
+                        </p>
+                        <div class=btn-sc>
+                            <a href=javascript:void(0) id=allow-later class="allow-later btn btn-secondary"
+                                data-dismiss=modal data-dismiss=modal> Maybe Later </a>
+                            <a href=javascript:void(0) id=enableNotifications class="allow-now btn btn-secondary"
+                                data-dismiss=modal> Allow </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modalSearch" id=searchModal>
+            <div class="modal-dialog modal-md">
+                <div class=modal-content>
+                    <div class=modal-body>
+                        <button type=button class=close data-dismiss=modal>&times;</button>
+                        <div class="form-group ad-form-group">
+                            <input class="form-control ad-input" id=search placeholder="Seach your game..."
+                                autocomplete=off>
+                            <button class=search>
+                                <svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 512 512">
+                                    <path
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class=search-box>
+                            <div class=search-list>
+                            </div>
+                            <div class=search-btn-sc>
+                                <a href=javascript:void(0); id=search-result-btn
+                                    class="btn btn-secondary small-btn">Search all results</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js" defer></script>
+    <script src="/assets/libraries/back-top/js/back-top.js" defer></script>
+    <script src="/assets/js/custom.js?v=1759392312" defer></script>
+    <script src="/assets/js/custom-new.js?v=1759392312" defer></script>
+    <script src="/assets/js/game-detail.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"
+        crossorigin="anonymous" defer></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"
+        crossorigin="anonymous" defer></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            $('.lazy').Lazy({
+                customLoaderName: function (element) {
+                    element.html('element handled by "customLoaderName"');
+                    element.load();
+                },
+                asyncLoader: function (element, response) {
+                    setTimeout(function () {
+                        element.html('element handled by "asyncLoader"');
+                        response(true);
+                    }, 5000);
+                }
+            });
+        });
+    </script>
+    <script src="/sw.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            $('.lazy').Lazy({
+                customLoaderName: function (element) {
+                    element.html('element handled by "customLoaderName"');
+                    element.load();
+                },
+                asyncLoader: function (element, response) {
+                    setTimeout(function () {
+                        element.html('element handled by "asyncLoader"');
+                        response(true);
+                    }, 5000);
+                }
+            });
+        });
+    </script>
+    <script src="/sw.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if ("serviceWorker" in navigator) {
+                // Register a service worker hosted at the root of the
+                // site using the default scope.
+                navigator.serviceWorker.register("/sw.js").then(
+                    (registration) => {
+                        //  console.log("Service worker registration succeeded:", registration);
+                    },
+                    (error) => {
+                        //  console.error(`Service worker registration failed: ${error}`);
+                    },
+                );
+            } else {
+                //  console.error("Service workers are not supported.");
+            }
+            const installApp = document.getElementById('app-installer');
+            const installAppMobile = document.getElementById('app-installer-mobile');
+            installApp.addEventListener('click', async () => {
+                if (deferredPrompt !== null) {
+                    deferredPrompt.prompt();
+                    const {
+                        outcome
+                    } = await deferredPrompt.userChoice;
+                    if (outcome === 'accepted') {
+                        deferredPrompt = null;
+                    }
+                }
+            });
+            installAppMobile.addEventListener('click', async () => {
+                if (deferredPrompt !== null) {
+                    deferredPrompt.prompt();
+                    const {
+                        outcome
+                    } = await deferredPrompt.userChoice;
+                    if (outcome === 'accepted') {
+                        deferredPrompt = null;
+                    }
+                }
+            });
+            window.addEventListener('beforeinstallprompt', (e) => {
+                $('.install-app-btn-container').show();
+                deferredPrompt = e;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

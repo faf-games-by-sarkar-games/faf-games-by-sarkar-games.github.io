@@ -176,6 +176,28 @@
      opacity: 1;
  }
 
+ .category-details  a{
+     text-decoration: none;
+     -webkit-transition: all 0.5s ease-in-out;
+     transition: all 0.5s ease-in-out;
+     color:  gold;
+     opacity: 1;
+     font-weight: 400;
+ }
+
+.play-a a{
+     text-decoration: none;
+     -webkit-transition: all 0.5s ease-in-out;
+     transition: all 0.5s ease-in-out;
+     color:  gold;
+     opacity: 1;
+     font-weight: bold;
+ }
+
+strong{
+    font-weight: 600;
+}
+
  a:hover,
  a:focus,
  a:active {

@@ -234,27 +234,27 @@
  }
 
  body h2 {
-     font-size: 40px;
-     line-height: 130%;
- }
-
- body h3 {
-     font-size: 32px;
-     line-height: 130%;
- }
-
- body h4 {
-     font-size: 28px;
-     line-height: 130%;
- }
-
- body h5 {
      font-size: 24px;
      line-height: 130%;
  }
 
- body h6 {
+ body h3 {
      font-size: 20px;
+     line-height: 130%;
+ }
+
+ body h4 {
+     font-size: 18px;
+     line-height: 130%;
+ }
+
+ body h5 {
+     font-size: 16px;
+     line-height: 130%;
+ }
+
+ body h6 {
+     font-size: 16px;
      line-height: 130%;
  }
 

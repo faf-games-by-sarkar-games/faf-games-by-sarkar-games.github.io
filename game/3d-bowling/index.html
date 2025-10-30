@@ -204,8 +204,14 @@
             top: 0;
             z-index: 1000
         }
-    </style>
+   </style>
 
+    <!-- PWA manifest and theme color for add-to-home-screen -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#191c21">
+    <!-- iOS support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="/img/faf-logo.png">
 
 </head>
 
@@ -358,10 +364,11 @@
                                 </li>
 
                                 <li class="btn-sc hidden-md hidden-sm hidden-xs">
-                                    <a href="https://faf-games.io/game/escape-road-city-2/"
-                                        class="btn btn-secondary btn-play-now small-btn">
-                                        <i class="fa fa-play-circle"></i> Play now
-                                    </a>
+                                    <div class=text-center>
+                                        <a href=javascript:void(0) class="link btn btn-secondary small-btn"
+                                            data-toggle=modal data-target=#PWAModal> <i
+                                                class="fas fa-arrow-alt-circle-down"></i> <b>Download app</b> </a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

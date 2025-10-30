@@ -340,6 +340,12 @@
         }
     </style>
 
+    <!-- PWA manifest and theme color for add-to-home-screen -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#191c21">
+    <!-- iOS support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="/img/faf-logo.png">
 
 </head>
 
@@ -2263,6 +2269,9 @@
         });
     </script>
     <script>
+        // Global deferred prompt for PWA install flow
+        let deferredPrompt = null;
+
         document.addEventListener('DOMContentLoaded', () => {
             if ("serviceWorker" in navigator) {
                 // Register a service worker hosted at the root of the
@@ -2280,30 +2289,38 @@
             }
             const installApp = document.getElementById('app-installer');
             const installAppMobile = document.getElementById('app-installer-mobile');
-            installApp.addEventListener('click', async () => {
-                if (deferredPrompt !== null) {
-                    deferredPrompt.prompt();
-                    const {
-                        outcome
-                    } = await deferredPrompt.userChoice;
-                    if (outcome === 'accepted') {
-                        deferredPrompt = null;
+
+            // Attach click handlers only if elements exist
+            if (installApp) {
+                installApp.addEventListener('click', async () => {
+                    if (deferredPrompt) {
+                        deferredPrompt.prompt();
+                        const { outcome } = await deferredPrompt.userChoice;
+                        if (outcome === 'accepted') {
+                            deferredPrompt = null;
+                        }
                     }
-                }
-            });
-            installAppMobile.addEventListener('click', async () => {
-                if (deferredPrompt !== null) {
-                    deferredPrompt.prompt();
-                    const {
-                        outcome
-                    } = await deferredPrompt.userChoice;
-                    if (outcome === 'accepted') {
-                        deferredPrompt = null;
+                });
+            }
+
+            if (installAppMobile) {
+                installAppMobile.addEventListener('click', async () => {
+                    if (deferredPrompt) {
+                        deferredPrompt.prompt();
+                        const { outcome } = await deferredPrompt.userChoice;
+                        if (outcome === 'accepted') {
+                            deferredPrompt = null;
+                        }
                     }
-                }
-            });
+                });
+            }
+
+            // Capture the beforeinstallprompt event so we can trigger it later
             window.addEventListener('beforeinstallprompt', (e) => {
-                $('.install-app-btn-container').show();
+                // Prevent the automatic mini-infobar on mobile
+                e.preventDefault();
+                // Show the install UI (app-specific selector)
+                try { $('.install-app-btn-container').show(); } catch (err) { /* jQuery may be missing */ }
                 deferredPrompt = e;
             });
         });

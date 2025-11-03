@@ -1,0 +1,163 @@
+name: IndexNow Submit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'sitemap*.xml'
+      - 'game/**'
+      - 'image/**'
+      - 'indexnow_urls.txt'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install requests
+        run: pip install --upgrade requests
+
+      - name: Submit URLs from Sitemap to IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          python - <<'PY'
+          import sys, json, urllib.parse
+          try:
+              import requests
+              import xml.etree.ElementTree as ET
+          except Exception as e:
+              print("Missing dependency:", e)
+              sys.exit(1)
+
+          # --- Config ---
+          # If you want to use a repo secret instead of embedding the key,
+          # add the secret INDEXNOW_KEY in repo settings. If INDEXNOW_KEY is empty,
+          # the workflow will attempt to use the hardcoded_key below.
+          hardcoded_key = "65c58252a5654c57b428550321b42b87"
+          key = (lambda: (sys.argv[1] if len(sys.argv) > 1 else None))()  # unused but placeholder
+          key = key or ( ( ( __import__('os').environ.get('INDEXNOW_KEY') ) or hardcoded_key ) )
+
+          domain = "faf-games.io"
+          sitemap_url = f"https://{domain}/sitemap.xml"
+          key_location = f"https://{domain}/{key}.txt"
+          endpoint = "https://api.indexnow.org/indexnow"
+          chunk_size = 1000
+
+          def fetch(url, timeout=15):
+              try:
+                  r = requests.get(url, timeout=timeout)
+                  r.raise_for_status()
+                  return r
+              except requests.RequestException as e:
+                  print(f"Failed to fetch {url}: {e}")
+                  raise
+
+          # Verify key file exists and contains the key
+          try:
+              print("Verifying key file:", key_location)
+              rkey = fetch(key_location, timeout=10)
+              if key not in rkey.text:
+                  print("❌ Key content mismatch or key not found in key file. Please ensure the file contains the key.")
+                  sys.exit(1)
+              print("✅ Key file reachable and verified.")
+          except Exception:
+              print("❌ Key verification failed. Ensure the file exists at the exact URL and contains the key.")
+              sys.exit(1)
+
+          # Fetch sitemap (handle sitemap index)
+          def fetch_xml(url):
+              r = fetch(url)
+              return r.content
+
+          def parse_sitemap(xml_bytes):
+              root = ET.fromstring(xml_bytes)
+              tag = root.tag.lower()
+              urls = []
+              # sitemapindex handling
+              if 'sitemapindex' in tag:
+                  for s in root.findall('.//{*}sitemap'):
+                      loc = s.find('{*}loc')
+                      if loc is not None and loc.text:
+                          try:
+                              child_xml = fetch_xml(loc.text.strip())
+                              urls.extend(parse_sitemap(child_xml))
+                          except Exception as e:
+                              print("Warning: failed to fetch child sitemap", loc.text, e)
+                              continue
+              else:
+                  for u in root.findall('.//{*}url'):
+                      loc = u.find('{*}loc')
+                      if loc is not None and loc.text:
+                          urls.append(loc.text.strip())
+              return urls
+
+          try:
+              print("Fetching sitemap:", sitemap_url)
+              sitemap_xml = fetch_xml(sitemap_url)
+              all_urls = parse_sitemap(sitemap_xml)
+          except Exception as e:
+              print("❌ Unable to fetch/parse sitemap:", e)
+              sys.exit(1)
+
+          # Filter URLs to site domain only and dedupe
+          filtered = []
+          for u in all_urls:
+              try:
+                  p = urllib.parse.urlparse(u)
+                  if p.scheme in ('http','https') and p.hostname and p.hostname.lower().endswith(domain):
+                      # remove fragment
+                      clean = urllib.parse.urlunparse(p._replace(fragment=''))
+                      filtered.append(clean)
+              except Exception:
+                  continue
+
+          # dedupe while preserving order
+          seen = set()
+          urls = []
+          for u in filtered:
+              if u not in seen:
+                  seen.add(u)
+                  urls.append(u)
+
+          if not urls:
+              print("⚠️ No valid URLs found for domain:", domain)
+              sys.exit(0)
+
+          print(f"✅ {len(urls)} URLs ready for submission. Submitting in chunks of {chunk_size}.")
+
+          # Submit in chunks and fail on non-2xx
+          for i in range(0, len(urls), chunk_size):
+              chunk = urls[i:i+chunk_size]
+              payload = {
+                  "host": domain,
+                  "key": key,
+                  "keyLocation": key_location,
+                  "urlList": chunk
+              }
+              headers = {"Content-Type": "application/json"}
+              try:
+                  resp = requests.post(endpoint, headers=headers, data=json.dumps(payload), timeout=30)
+                  print(f"Batch {i//chunk_size + 1}: Sent {len(chunk)} URLs → HTTP {resp.status_code}")
+                  print("Response body:", resp.text)
+                  if resp.status_code < 200 or resp.status_code >= 300:
+                      print("❌ Non-2xx response from IndexNow — failing the job.")
+                      sys.exit(1)
+              except requests.RequestException as e:
+                  print("❌ Network error submitting to IndexNow:", e)
+                  sys.exit(1)
+
+          print("🎉 IndexNow submission completed successfully.")
+          sys.exit(0)
+          PY
